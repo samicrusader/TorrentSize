@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-appname=$1
-tag=$2
-[ -z "$tag" ] && echo "Usage: build <appname> <version>" && exit 1
-[ -z "$appname" ] && echo "Usage: build <appname> <version>" && exit 1
+appname=TorrentSize
+tag=$(git rev-parse --short HEAD)
 
 name=${appname}-${tag}-windows.exe
 GOOS="windows" GOARCH="amd64" go build -ldflags="-s -w" -o $name
