@@ -47,4 +47,4 @@ go build
 ```
 
 Originally a project from:
-[![The-Eye.eu](logo3_x300.png)](https://the-eye.eu)
+[![The-Eye.eu](the-eye-logo.png)](https://the-eye.eu)
